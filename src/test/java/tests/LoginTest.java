@@ -10,10 +10,10 @@ public class LoginTest extends BaseTest{
     @DataProvider(name="incorrectLoginTest")
     public Object[][] incorrectLoginTest(){
         return new Object[][]{
-                {"","",""},
-                {"","",""},
-                {"","",""},
-                {"","",""},
+                {"sdddgg","ghjkll","Incorrect username or password."},
+                {"","","Incorrect username or password."},
+                {"dfgghhj","","Incorrect username or password."},
+                {"","ghjklll","Incorrect username or password."},
         };
     }
     @Test(dataProvider = "incorrectLoginTest")
